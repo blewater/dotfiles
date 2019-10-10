@@ -33,4 +33,7 @@ alias vi='vim'
 alias s0='shutdown -r +0'
 export EDITOR=vim
 
+git config --global color.ui true
+git config --global core.pager 'less -r'
+
 alias config='/usr/bin/git --git-dir=/Users/user/.config/ --work-tree=/Users/user'
