@@ -2,6 +2,7 @@ set -Ux LC_CTYPE en_US.UTF-8
 set -Ux LC_ALL en_US.UTF-8
 set -Ux LANG en_US.UTF-8
 set -Ux GOPATH $HOME/go
+set -Ux ERL_AFLAGS "-kernel shell_history enabled"
 
 defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 1
@@ -26,9 +27,9 @@ and not set -q TMUX
     exec tmux
 end
 
-alias l='ls -alFh'
-alias la='ls -AFh'
-alias lc='ls -CF'
+alias l='ls -alFhG'
+alias la='ls -AFhG'
+alias lc='ls -CFG'
 alias vi='vim'
 alias s0='shutdown -r +0'
 export EDITOR=vim
@@ -37,3 +38,4 @@ git config --global color.ui true
 git config --global core.pager 'less -r'
 
 alias config='/usr/bin/git --git-dir=/Users/user/.config/ --work-tree=/Users/user'
+
