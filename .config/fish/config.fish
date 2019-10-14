@@ -32,6 +32,8 @@ alias la='ls -AFhG'
 alias lc='ls -CFG'
 alias vi='vim'
 alias s0='shutdown -r +0'
+alias d=docker
+alias dc=docker-compose
 export EDITOR=vim
 
 git config --global color.ui true
